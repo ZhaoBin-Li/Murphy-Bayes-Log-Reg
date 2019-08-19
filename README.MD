@@ -8,7 +8,7 @@ Largely based on Section 8.4 of
 
 ## Usage
 
-### [Demo](test_parkinsons) on the [UCI parkinsons dataset](https://archive.ics.uci.edu/ml/datasets/parkinsons): 
+### [Demo](test/integrated/test_parkinsons.py) on the [UCI parkinsons dataset](https://archive.ics.uci.edu/ml/datasets/parkinsons): 
 
 ```python
 
@@ -45,7 +45,6 @@ w_posterior, H_posterior = mbl.fit(training_y,
                                    w_prior, H_prior)
 
 # Get Bayes point and Monte Carlo probabilities
-
 test_probs, preds, max_probs = mbl.get_bayes_point_probs(test_X, w_posterior)
 bayes_acc =  np.mean(preds == test_y)
 
@@ -54,13 +53,12 @@ test_probs, preds, max_probs = mbl.get_monte_carlo_probs(test_X, w_posterior, H_
 mc_acc = np.mean(preds == test_y)
 ```
 
-### [Demo](examples/MNIST/2 Bayesian FC.ipynb) 
-on the extracted [MNIST CNN Features](examples/MNIST/1 CNN Feature Extraction.ipynb):
+### [Demo](examples/MNIST/2_Bayesian_FC.ipynb) on the extracted [MNIST CNN Features](examples/MNIST/1_CNN_Feature_Extraction.ipynb):
 
 ### Animations
 
-Bayes point moderates the probability (i.e. decreases the certainty) 
-as we move get more distant from the datapoints, as compared to probit
+[Notebook](examples/MNIST/3_Visualizing_2_Classes.ipynb): Bayes point moderates the probability (i.e. decreases the certainty) 
+as we move get more distant from the datapoints, as compared to probit (i.e. regularized logistic regression)
 
 ![probit animation](examples/MNIST/animations/probit.gif)
 
