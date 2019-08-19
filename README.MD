@@ -68,8 +68,10 @@ as we move get more distant from the datapoints, as compared to probit
 
 ### Dependencies
 
+```
 numpy
 scipy
 sklearn (optional - to visualize TSNE and PCA)
 autograd (optional - to use in pytest)
 matplotlib (optional - to visualize decision boundaries)
+```
