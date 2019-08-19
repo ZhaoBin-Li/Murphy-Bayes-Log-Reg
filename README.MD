@@ -63,7 +63,8 @@ Bayes point moderates the probability (i.e. decreases the certainty)
 as we move get more distant from the datapoints, as compared to probit
 
 ![probit animation](examples/MNIST/animations/probit.gif)
-![bayes point animation](examples/MNIST/animations/bayes_points.gif)
+
+![bayes point animation](examples/MNIST/animations/bayes_point.gif)
 
 ### Dependencies
 
