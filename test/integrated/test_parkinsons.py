@@ -3,7 +3,7 @@ import pandas as pd
 
 import multinomial_bayes_logistic as mbl
 
-def test_parkinsons(dataset):
+def test_parkinsons():
     # Download and process data
     url = "http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/parkinsons.data"
     df = pd.read_csv(url)

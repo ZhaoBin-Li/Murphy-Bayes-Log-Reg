@@ -69,7 +69,8 @@ as we move get more distant from the datapoints, as compared to probit (i.e. reg
 ```
 numpy
 scipy
-sklearn (optional - to visualize TSNE and PCA)
-autograd (optional - to use in pytest)
-matplotlib (optional - to visualize decision boundaries)
+autograd 
+sklearn
+pandas 
+matplotlib
 ```
